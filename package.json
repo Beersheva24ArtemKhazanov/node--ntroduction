@@ -10,5 +10,8 @@
   "description": "",
   "devDependencies": {
     "vitest": "^3.0.4"
+  },
+  "dependencies": {
+    "winston": "^3.17.0"
   }
 }

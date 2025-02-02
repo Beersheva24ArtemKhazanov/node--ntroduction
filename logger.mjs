@@ -1,12 +1,13 @@
-class Logger {
-    constructor() {
+import winston from "winston";
 
+const logger = winston.createLogger(
+    {
+        level: process.env.LEVEL ?? 'info',
+        format: winston.format.simple(),
+        transports: [
+            new winston.transports.Console
+        ]
     }
-
-    log(message) {
-        console.log(message);
-    }
-}
-const logger = new Logger();
+);
 
 export default logger;
