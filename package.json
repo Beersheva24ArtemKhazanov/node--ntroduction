@@ -12,6 +12,7 @@
     "vitest": "^3.0.4"
   },
   "dependencies": {
+    "node-introduction": "file:",
     "winston": "^3.17.0"
   }
 }
